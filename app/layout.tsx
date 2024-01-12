@@ -1,3 +1,6 @@
+import { ThemeProvider } from "@/components/theme-provider"
+
+
 import type { Metadata } from 'next'
 import './globals.css'
 import { Inter as FontSans } from "next/font/google"
@@ -13,6 +16,7 @@ export const metadata: Metadata = {
 }
 
 import { cn } from "@/lib/utils"
+import Navbar from "@/components/navbar"
 
 export default function RootLayout({
   children,
@@ -24,7 +28,19 @@ export default function RootLayout({
       <body className={cn(
         "min-h-screen bg-background m-0 p-0 font-sans antialiased",
         fontSans.variable
-      )}>{children}</body>
+      )}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="dark:bg-[#191627] bg-[#FBFBFE]">
+              <Navbar />
+              {children}
+          </main>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
