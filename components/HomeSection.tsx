@@ -55,9 +55,11 @@ const HomeSection = () => {
                             <p className=' whitespace-nowrap'>&nbsp; Developer</p>
                         </div>
                         <p className='text-lg lg:text-xl capitalize dark:text-[#F2F1F3]/70'>Open-Source enthusiast and self learner, <br className='hidden md:block' /> believes in the power of community.</p>
+                        <Scroll scrollToId='contact'>
                         <Button variant={'default'} size="lg" className='gap-2 w-[10rem] '>
                             Contact Me <Send className='h-[1rem] w-[1rem]' />
                         </Button>
+                        </Scroll>
                     </div>
                 </div>
                 <div className='md:block hidden ' >
