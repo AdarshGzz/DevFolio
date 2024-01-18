@@ -29,7 +29,7 @@ const NavScroll = ({ children }: NavScrollProps) => {
     }, []);
 
     return (
-        <nav className={`navbar ${isSticky ?  'md:fixed transition-opacity w-full shadow-lg' : ''}`}>
+        <nav className={`navbar ${isSticky ?  'md:fixed transition-opacity w-full shadow-lg z-10' : ''}`}>
             {children}
         </nav>
     );

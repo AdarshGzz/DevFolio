@@ -2,12 +2,13 @@ import React from 'react'
 
 interface LayoutProps{
  className? : string,
- children : React.ReactNode
+ id?:string,
+ children : React.ReactNode,
 }
 
-const Layout = ({className,children}:LayoutProps) => {
+const Layout = ({className,id,children}:LayoutProps) => {
   return (
-    <section className={`${className}`}>
+    <section className={`${className}`} id={id} >
       {children}
     </section>
   )

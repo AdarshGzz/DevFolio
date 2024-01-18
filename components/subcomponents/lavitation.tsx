@@ -9,6 +9,7 @@ interface LavitationProps{
 const LavitationBox = ({ children }: LavitationProps) => {
   return (
     <motion.div
+        className=" z-0"
         initial={{
             transform:"translateY(-1rem)",
         }}

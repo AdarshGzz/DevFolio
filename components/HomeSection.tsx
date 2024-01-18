@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Layout from './subcomponents/layout'
 import { Linkedin, Github, Twitter, Instagram, Send, Mouse, ArrowBigDownDash } from 'lucide-react';
@@ -8,25 +9,31 @@ import Blob from './subcomponents/blob';
 import Typewriter from '@/components/subcomponents/typewriterText';
 import LavitationBox from './subcomponents/lavitation';
 import Scroll from './subcomponents/scroll';
+
 // import ProfileImage from '@/public/assets/fImage.png'
-const HomePage = () => {
+const HomeSection = () => {
 
     const socialInfo = [
-        { link: './', icon: <Linkedin className='h-[1.3rem] w-[1.3rem]' /> },
-        { link: './', icon: <Github className='h-[1.3rem] w-[1.3rem]' /> },
-        { link: './', icon: <Twitter className='h-[1.3rem] w-[1.3rem]' /> },
-        { link: './', icon: <Instagram className='h-[1.3rem] w-[1.3rem]' /> },
+        { link: './', icon: <Linkedin className='h-[1.5rem] w-[1.5rem]' /> },
+        { link: './', icon: <Github className='h-[1.5rem] w-[1.5rem]' /> },
+        { link: './', icon: <Twitter className='h-[1.5rem] w-[1.5rem]' /> },
+        { link: './', icon: <Instagram className='h-[1.5rem] w-[1.5rem]' /> },
     ]
 
     const Words = ["Frontend", "Backend", "Web3"]
 
+
+    // const Scroll =()=>{
+    //     window.scrollTo({ top:800, behavior: 'smooth' })
+    // }
+
     return (
-        <Layout className='h-screen w-full flex flex-col items-center gap-[9rem] ' >
-            <div className=" w-full flex flex-row md:justify-between p-5 md:p-10 lg:px-[15rem] md:px-[5rem] md:items-center items-start    ">
-                <div className="flex md:flex-row items-center lg:gap-20 flex-col md:gap-10 gap-5 ">
+        <Layout id={'homeSection'} className='h-[100vh] w-[100%] flex flex-col items-center gap-[9rem] md:px-5 md:py-20 py-10 top-0 dark:bg-[#191627] bg-[#FBFBFE]' >
+            <div className=" w-full flex flex-row justify-center md:items-center items-start  md:px-[15rem] ">
+                <div className="flex md:flex-row items-center justify-around flex-col w-full gap-5 ">
                     <div className='w-full md:w-max flex flex-row items-center justify-around gap-3 '>
                         <div>
-                            <ul className='flex flex-col gap-3'>
+                            <ul className='flex flex-col gap-7'>
                                 {socialInfo.map((social, i) => {
                                     return (
                                         <li key={i} >
@@ -40,7 +47,7 @@ const HomePage = () => {
                             <Blob />
                         </div>
                     </div>
-                    <div className='flex flex-col gap-5 py-5 w-full'>
+                    <div className='flex flex-col gap-5 py-5 md:w-[25rem] w-[21rem]'>
                         <h1 className='text-4xl lg:text-6xl font-bold leading-[3rem] '>Hi, I&apos;m <br className='hidden md:block' /> Adarsh</h1>
                         <div className='text-xl lg:text-2xl font-semibold dark:text-[#F2F1F3]/70 flex flex-row'>
                             <p className=' whitespace-nowrap'>I am a &nbsp;</p>
@@ -64,19 +71,18 @@ const HomePage = () => {
                 </div>
             </div>
             <LavitationBox>
-                <Scroll scrollToId='heading'>
-            <div className='hidden md:flex flex-row gap-3'>
-                <Mouse className='text-[#6D57E0]' />
-                <span className='font-semibold dark:text-[#F2F1F3]/70'>
-                    Scroll Down
-                </span>
-                <ArrowBigDownDash className='text-[#6D57E0]' />
-
-            </div>
+                <Scroll scrollToId={'about'}>
+                 <div className='hidden md:flex flex-row gap-3'>
+                        <Mouse className='text-[#6D57E0]' />
+                        <span className='font-semibold dark:text-[#F2F1F3]/70'>
+                            Scroll Down
+                        </span>
+                        <ArrowBigDownDash className='text-[#6D57E0]' />
+                    </div>
                 </Scroll>
             </LavitationBox>
         </Layout>
     )
 }
 
-export default HomePage
+export default HomeSection

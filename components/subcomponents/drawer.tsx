@@ -8,8 +8,10 @@ import {
 import { Button } from '../ui/button'
 import { MenuSquare } from 'lucide-react';
 
+
+
 interface BottomNavProps{
-    navLinks:{title: string,icon:React.ReactNode}[],
+    navLinks:{title: string,icon:React.ReactNode,scrollToId:string}[],
 }
 
 const BottonNav = ({navLinks}:BottomNavProps) => {
@@ -17,7 +19,7 @@ const BottonNav = ({navLinks}:BottomNavProps) => {
   return (
     <div>
           <Drawer>
-              <DrawerTrigger>
+              <DrawerTrigger> 
                 <Button variant={'ghost'} size="icon" className='p-2' asChild>
                       <MenuSquare className="h-[2.2rem] w-[2.2rem] rotate-0 scale-100 transition-all " />
                 </Button>
@@ -29,7 +31,7 @@ const BottonNav = ({navLinks}:BottomNavProps) => {
                             return (
                                 <li key={i} className="flex text-center flex-col items-center capitalize  hover:text-[#6D57E0] cursor-pointer">
                                     {nav.icon}
-                                    <span>{nav.title}</span>
+                                <span>{nav.title}</span>
                                 </li>
                             )
                         })}

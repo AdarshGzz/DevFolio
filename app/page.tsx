@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import Navbar from '../components/navbar';
-import HomePage from '@/components/HomePage';
+import HomeSection from '@/components/HomeSection';
 import Blob from '@/components/subcomponents/blob';
 import Typewriter from '@/components/subcomponents/typewriterText';
 import Heading from '@/components/subcomponents/sectionHeading';
+import About from '@/components/AboutSection';
+import Skills from '@/components/SkillsSection';
+import Qualification from '@/components/QualificationSection';
 export default function Home() {
   
   return (
@@ -24,13 +27,11 @@ export default function Home() {
         <meta name="twitter:url" content="https://thepranaygupta.github.io/" />
       </Head>
       <main>
-       <HomePage/>
-        <div id={'heading'}>
-          <Heading title="About" subtitle="My Introduction" />
-        </div>
+       <HomeSection/>
+       <About/>
+       <Skills/>
+       <Qualification/>
        
-
-
       </main>
     </>
    
