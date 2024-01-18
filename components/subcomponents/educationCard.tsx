@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { BellIcon, CheckIcon } from "@radix-ui/react-icons"
 import { cn } from "@/lib/utils"
-
-
+import { School, GraduationCap } from 'lucide-react';
 
 import {
     Card,
@@ -22,18 +19,18 @@ interface CardProps{
 
 export function EduCard({ className,title,provider,duration }: CardProps) {
     return (
-        <Card className={cn("w-[300px]", className)}>
+        <Card className={cn("w-[95%] sm:w-[400px] md:w-[500px] text-white bg-[#8C52FF] border-2 border-[#4910b9]", className)}>
             <CardHeader>
-                <CardTitle>{title}</CardTitle>
+                <CardTitle className="flex flex-row items-center text-xl gap-2"><GraduationCap/>{title}</CardTitle>
             </CardHeader>
             <CardContent className="grid gap-4">
-                <div className=" flex items-center space-x-4 rounded-md border p-4">
-                    <BellIcon />
+                <div className=" flex items-start space-x-4 rounded-md border p-4">
+                    <School />
                     <div className="flex-1 space-y-1">
-                        <p className="text-sm font-medium leading-none">
+                        <p className="text-lg font-medium leading-none">
                             {provider}
                         </p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-md text-white/80 ">
                             {duration}
                         </p>
                     </div>

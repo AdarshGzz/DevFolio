@@ -28,7 +28,7 @@ const HomeSection = () => {
     // }
 
     return (
-        <Layout id={'homeSection'} className='h-[100vh] w-[100%] flex flex-col items-center gap-[9rem] md:px-5 md:py-20 py-10 top-0 dark:bg-[#191627] bg-[#FBFBFE]' >
+        <Layout id={'homeSection'} className=' w-[100%] flex flex-col items-center gap-[9rem] md:px-5 md:py-20 py-10 top-0 dark:bg-[#191627] bg-[#FBFBFE]' >
             <div className=" w-full flex flex-row justify-center md:items-center items-start  md:px-[15rem] ">
                 <div className="flex md:flex-row items-center justify-around flex-col w-full gap-5 ">
                     <div className='w-full md:w-max flex flex-row items-center justify-around gap-3 '>

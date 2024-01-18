@@ -7,6 +7,10 @@ import Heading from '@/components/subcomponents/sectionHeading';
 import About from '@/components/AboutSection';
 import Skills from '@/components/SkillsSection';
 import Qualification from '@/components/QualificationSection';
+import Project from '@/components/ProjectSection';
+import ProjectCard from '@/components/subcomponents/projectCard';
+import ScrollTopButton from '@/components/scrollTopButton';
+import ContactMe from '@/components/ContactSection';
 export default function Home() {
   
   return (
@@ -29,8 +33,14 @@ export default function Home() {
       <main>
        <HomeSection/>
        <About/>
-       <Skills/>
+       <div className='md:-mt-[20rem]'>
+         <Skills/>
+       </div>
        <Qualification/>
+       <Project/>
+        <ContactMe/>
+        <ScrollTopButton/>
+
        
       </main>
     </>

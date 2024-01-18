@@ -69,7 +69,7 @@ const Skills = () => {
   ]
 
   return (
-    <Layout id={'skills'} className=' sm:h-[140vh] h-[160vh]  md:h-[120vh] w-[100%] gap-[4rem] flex flex-col md:py-10 py-20 items-center dark:bg-[#191627] bg-[#FBFBFE] '>
+    <Layout id={'skills'} className=' w-[100%] gap-[4rem] flex flex-col md:py-10 py-20 items-center dark:bg-[#191627] bg-[#FBFBFE] '>
       <div>
       <Heading title={'Skills'} subtitle={'Tech Stack'}/>
       </div>

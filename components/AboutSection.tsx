@@ -10,7 +10,7 @@ import Confeti from './subcomponents/confeti';
 
 const About = () => {
     return (
-        <Layout id='about' className=' w-[100%] md:h-[100vh] h-[160vh] px-2  md:px-5 md:py-20 py-20 sm:py-10 flex flex-col items-center  dark:bg-[#191627] bg-[#FBFBFE]  '>
+        <Layout id='about' className=' w-[100%] px-2  md:px-5 md:py-20 py-20 sm:py-10 flex flex-col items-center  dark:bg-[#191627] bg-[#FBFBFE]  '>
             <Heading title="About" subtitle="My Introduction" />
             <div className='grid md:grid-cols-2 grid-rows-2 place-content-center px-5 md:gap-5 py-5 sm:py-10 md:py-20'>
                 <div className='flex items-center justify-center'>
