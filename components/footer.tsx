@@ -10,7 +10,7 @@ const Footer = () => {
 
     
     return (
-        <Layout className='w-full flex flex-col gap-10 text-white  bg-gradient-to-r from-[#6426C7] to-[#8C52FF]  md:px-[10rem] md:py-20 py-10 px-5 text-xl font-bold pb-20 md:pb-10'>
+        <Layout className='w-full flex flex-col gap-10 text-white  bg-gradient-to-r from-[#6426C7] to-[#8C52FF]  md:px-[10rem] md:py-20 py-10 px-5 md:text-xl text-lg font-bold pb-20 md:pb-10'>
             <div className='flex items-center text-4xl justify-center'>
                 &apos;&apos; The only way to do great work is to love what you do. &apos;&apos;
             </div>
