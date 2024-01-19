@@ -5,14 +5,19 @@ import Link from "next/link"
 
 import { ModeToggle } from './subcomponents/modeButton';
 import Confeti from './subcomponents/confeti';
-import BottonNav from './subcomponents/drawer';
 import { Home, User, FileText, GraduationCap, FolderGit2, Send } from 'lucide-react';
 import NavScroll from './subcomponents/navbarScroll';
 import Scroll from './subcomponents/scroll';
 
 
+import { Button } from '@/components/ui/button'
+import { MenuSquare } from 'lucide-react';
+import Drawer from './subcomponents/drawer';
+
+
 
 function Navbar() {
+
 
     const navLinks = [
         { title: 'Home', icon: <Home />, scrollToId: 'homeSection' },
@@ -68,7 +73,11 @@ function Navbar() {
                 </div>
                 <div className='flex flex-row '>
                     <ModeToggle />
-                    <BottonNav navLinks={navLinks} />
+                    <Drawer navLinks={navLinks}>
+                    <Button variant={'ghost'} size="icon" className='p-2' asChild>
+                        <MenuSquare className="h-[2.2rem] w-[2.2rem] rotate-0 scale-100 transition-all " />
+                    </Button>
+                    </Drawer>
                 </div>
             </Layout>
         </>

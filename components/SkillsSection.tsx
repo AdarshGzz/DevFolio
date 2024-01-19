@@ -19,14 +19,13 @@ import {
 interface SkillCardsProps{
   title: string,
   logo:any,
-  key:any,
   progress:number,
 }
 
 
-const SkillCards = ({ title, logo,key,progress }: SkillCardsProps) =>{
+const SkillCards = ({ title, logo,progress }: SkillCardsProps) =>{
    return(
-     <div key={key} >
+     <div>
        <HoverCard>
          <HoverCardTrigger asChild>
            <Image unselectable='on' src={logo} height={150} width={150} className='hover:-translate-y-2 duration-100 ease-in-out' alt='skill-logo' />
