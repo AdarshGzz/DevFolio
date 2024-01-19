@@ -19,10 +19,10 @@ const Footer = () => {
                 Copyright © {currentYear}. All rights are reserved
             </div>
             <div className='flex flex-row gap-5'>
-                <Link href={'./'} className='hover:scale-150 duration-150'>
+                    <Link href={'https://github.com/AdarshGzz'} className='hover:scale-150 duration-150'>
                     <Github />
                 </Link>
-                <Link href={'./'} className='hover:scale-150 duration-150'>
+                    <Link href={'https://www.linkedin.com/in/adarsh-kumar-gupta-a96b54228/'} className='hover:scale-150 duration-150'>
                     <Linkedin />
                 </Link>
             </div>

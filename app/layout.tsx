@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 }
 
 import { cn } from "@/lib/utils"
-import Navbar from "@/components/navbar"
 
 export default function RootLayout({
   children,
@@ -35,7 +34,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-              <Navbar />
               {children}
         </ThemeProvider>
       </body>

@@ -14,10 +14,10 @@ import Scroll from './subcomponents/scroll';
 const HomeSection = () => {
 
     const socialInfo = [
-        { link: './', icon: <Linkedin className='h-[1.5rem] w-[1.5rem]' /> },
-        { link: './', icon: <Github className='h-[1.5rem] w-[1.5rem]' /> },
-        { link: './', icon: <Twitter className='h-[1.5rem] w-[1.5rem]' /> },
-        { link: './', icon: <Instagram className='h-[1.5rem] w-[1.5rem]' /> },
+        { link: 'https://www.linkedin.com/in/adarsh-kumar-gupta-a96b54228/', icon: <Linkedin className='h-[1.5rem] w-[1.5rem]' /> },
+        { link: 'https://github.com/AdarshGzz', icon: <Github className='h-[1.5rem] w-[1.5rem]' /> },
+        // { link: './', icon: <Twitter className='h-[1.5rem] w-[1.5rem]' /> },
+        { link: 'https://www.instagram.com/adarshgzz/', icon: <Instagram className='h-[1.5rem] w-[1.5rem]' /> },
     ]
 
     const Words = ["Frontend", "Backend", "Web3"]

@@ -7,6 +7,7 @@ import Project from '@/components/ProjectSection';
 import ScrollTopButton from '@/components/scrollTopButton';
 import ContactMe from '@/components/ContactSection';
 import Footer from '@/components/footer';
+import Navbar from '@/components/navbar';
 
 export default function Home() {
   
@@ -28,7 +29,8 @@ export default function Home() {
         <meta name="twitter:url" content="https://thepranaygupta.github.io/" />
       </Head>
       <main>
-       <HomeSection/>
+      <Navbar/>
+      <HomeSection/>
        <About/>
        <div className='md:-mt-[20rem]'>
          <Skills/>

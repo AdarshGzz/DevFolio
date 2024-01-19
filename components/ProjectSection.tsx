@@ -2,16 +2,19 @@ import React from 'react'
 import Layout from './subcomponents/layout'
 import Heading from './subcomponents/sectionHeading'
 import { CarouselPlugin } from './subcomponents/projectCrousel'
-import ProjectDemo from '@/public/assets/Project/projectDemo.png'
+// import ProjectDemo from '@/public/assets/Project/projectDemo.png'
+import Wheels4Rent from '@/public/assets/Project/Wheels4Rent.png'
+import BmiCalculator from '@/public/assets/Project/BmiCalculator.png'
+import DateAsk from '@/public/assets/Project/DateAsk.png'
 
 
 const Project = () => {
 
 
     const ProjecDetails = [
-        {image:ProjectDemo, title:"Project 1" ,link:"./"},
-        {image:ProjectDemo, title:"Project 2" ,link:"./"},
-        {image:ProjectDemo, title:"Project 3" ,link:"./"},
+        { image: Wheels4Rent, title: "Car Rental Website", link:"https://github.com/AdarshGzz/OnroadzCars"},
+        { image: BmiCalculator, title: "BMI Calculator", link:"https://github.com/AdarshGzz/BMI_Calculator"},
+        { image: DateAsk, title: "Date Ask Website", link:"https://github.com/AdarshGzz/DateAsk"},
     ]
 
   return (

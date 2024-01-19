@@ -7,6 +7,7 @@ import ProfileImage from '@/public/assets/programmer.svg';
 import LavitationBox from './subcomponents/lavitation';
 import { ScrollText } from 'lucide-react';
 import Confeti from './subcomponents/confeti';
+import Link from 'next/link';
 
 const About = () => {
     return (
@@ -30,9 +31,11 @@ const About = () => {
                     </p>
                     <div>
                         <Confeti>
+                            <Link href={'https://drive.google.com/file/d/1AWusiRLIzE5EOX-qXio-7_jjFFYND4zc/view?usp=drive_link'}>
                             <Button variant={'default'} size={'lg'} className='gap-1'>
                                 Resume <ScrollText />
                             </Button>
+                            </Link>
                         </Confeti>
                     </div>
                 </div>
