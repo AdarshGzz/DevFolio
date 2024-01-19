@@ -45,7 +45,7 @@ const ContactMe = () => {
             </div>
             <div className='flex flex-col items-start gap-20 md:p-10 p-5 pt-10 md:pt-10 '>
                 <div>
-                    <p className='md:text-3xl text-2xl font-bold'>Don't be shy! Hit me up! 👇</p>
+                    <p className='md:text-3xl text-2xl font-bold'>Don&apos;t be shy! Hit me up! 👇</p>
                 </div>
                 <div className='flex md:flex-row flex-col md:gap-20 gap-10'>
                     <Format icon={<MapPinned />} title='Location' detail='Bhopal (M.P.), INDIA' />
