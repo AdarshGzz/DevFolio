@@ -6,7 +6,7 @@ import { CarouselPlugin } from './subcomponents/projectCrousel'
 import Wheels4Rent from '@/public/assets/Project/Wheels4Rent.png'
 import BmiCalculator from '@/public/assets/Project/BmiCalculator.png'
 import DateAsk from '@/public/assets/Project/DateAsk.png'
-import Animeverse from '@/public/assets/Project/amimeverse.png'
+import Animeverse from '@/public/assets/Project/animeverse.png'
 
 
 const Project = () => {
