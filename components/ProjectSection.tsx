@@ -6,12 +6,14 @@ import { CarouselPlugin } from './subcomponents/projectCrousel'
 import Wheels4Rent from '@/public/assets/Project/Wheels4Rent.png'
 import BmiCalculator from '@/public/assets/Project/BmiCalculator.png'
 import DateAsk from '@/public/assets/Project/DateAsk.png'
+import Animeverse from '@/public/assets/Project/amimeverse.png'
 
 
 const Project = () => {
 
 
     const ProjecDetails = [
+        { image: Animeverse, title: "Animeverse", link:"https://github.com/AdarshGzz/Anime-Webapp"},
         { image: Wheels4Rent, title: "Car Rental Website", link:"https://github.com/AdarshGzz/OnroadzCars"},
         { image: BmiCalculator, title: "BMI Calculator", link:"https://github.com/AdarshGzz/BMI_Calculator"},
         { image: DateAsk, title: "Date Ask Website", link:"https://github.com/AdarshGzz/DateAsk"},
