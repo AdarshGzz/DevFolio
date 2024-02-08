@@ -7,6 +7,7 @@ import { GraduationCap, FileCheck } from 'lucide-react';
 import { CerfCard } from './subcomponents/certificateCard'
 import Certificate2 from "@/public/assets/certificate/cer1.png";
 import Certificate1 from "@/public/assets/certificate/cer2.png";
+import Certificate3 from "@/public/assets/certificate/cer3.png";
 
 const Qualification = () => {
 
@@ -17,6 +18,7 @@ const Qualification = () => {
   ]
 
   const CertificationDetails = [
+    { title: 'The Bits and Bytes of Computer Networking', image: Certificate3, provider: "Google", issued: "7 Jan 2024", id: 'AKKPZHNBQIGL', validation:'https://www.coursera.org/account/accomplishments/verify/AKKPZHNBQIGL' },
     { title: 'Mern Full Stack Internship Program',image:Certificate1, provider: "Ethnus <Codemithra/>", issued: "8 Dec 2023", id: '7CN4LTV9', validation:'https://ethnus.com/certverify' },
     { title: 'React and Redux Certification Test',image:Certificate2, provider: "KG Coding", issued: "Dec 2023", id: 'YNQQUIVB', validation:'https://www.kgcoding.in/verify-certificate?serialno=YNQQUIVB' },
   ]
