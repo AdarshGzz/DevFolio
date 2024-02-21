@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card"
 import Image from "next/image";
 import Link from "next/link";
+import  ShowCertificate  from "./showCertificate";
 
 
 interface CardProps {
@@ -31,7 +32,9 @@ export function CerfCard({ className, title, provider, duration ,Vid ,Vlink,imag
             </CardHeader>
             <CardContent className="grid gap-4">
                 <div className=" flex items-center space-x-4 rounded-md border p-4">
-                    <Image className="rounded-lg md:h-[100px] md:w-[150px]  h-[50px] w-[100px]"  src={image} alt="certificate"/>
+                    <ShowCertificate image={image} >
+                      <Image className="rounded-lg md:h-[100px] md:w-[150px]  h-[50px] w-[100px] cursor-pointer"  src={image} alt="certificate"/>
+                    </ShowCertificate>
                     <div className="flex-1 space-y-2">
                         <p className=" flex flex-row gap-2 items-start text-xl font-medium leading-none">
                             <FaLaptopCode/>{provider}
