@@ -8,6 +8,7 @@ import { CerfCard } from './subcomponents/certificateCard'
 import Certificate2 from "@/public/assets/certificate/cer1.png";
 import Certificate1 from "@/public/assets/certificate/cer2.png";
 import Certificate3 from "@/public/assets/certificate/cer3.png";
+import Certificate4 from "@/public/assets/certificate/cer4.png";
 
 const Qualification = () => {
 
@@ -18,6 +19,7 @@ const Qualification = () => {
   ]
 
   const CertificationDetails = [
+    { title: 'ReactJS Certification', image: Certificate4, provider: "Infosys", issued: "22 Feb 2024", id: 'NA', validation:'https://verify.onwingspan.com/' },
     { title: 'The Bits and Bytes of Computer Networking', image: Certificate3, provider: "Google", issued: "7 Jan 2024", id: 'AKKPZHNBQIGL', validation:'https://www.coursera.org/account/accomplishments/verify/AKKPZHNBQIGL' },
     { title: 'Mern Full Stack Internship Program',image:Certificate1, provider: "Ethnus <Codemithra/>", issued: "8 Dec 2023", id: '7CN4LTV9', validation:'https://ethnus.com/certverify' },
     { title: 'React and Redux Certification Test',image:Certificate2, provider: "KG Coding", issued: "Dec 2023", id: 'YNQQUIVB', validation:'https://www.kgcoding.in/verify-certificate?serialno=YNQQUIVB' },
