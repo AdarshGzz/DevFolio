@@ -7,12 +7,13 @@ import Wheels4Rent from '@/public/assets/Project/Wheels4Rent.png'
 import BmiCalculator from '@/public/assets/Project/BmiCalculator.png'
 import DateAsk from '@/public/assets/Project/DateAsk.png'
 import Animeverse from '@/public/assets/Project/animeverse.png'
-
+import EmailAuth from '@/public/assets/Project/emailAuth.png'
 
 const Project = () => {
 
 
     const ProjecDetails = [
+        { image: EmailAuth, title: "Email-OTP Authentication", link: "email-auth-system.vercel.app"},
         { image: Animeverse, title: "Animeverse", link:"https://github.com/AdarshGzz/Anime-Webapp"},
         { image: Wheels4Rent, title: "Car Rental Website", link:"https://github.com/AdarshGzz/OnroadzCars"},
         { image: BmiCalculator, title: "BMI Calculator", link:"https://github.com/AdarshGzz/BMI_Calculator"},
