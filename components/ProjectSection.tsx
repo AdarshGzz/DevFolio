@@ -13,7 +13,7 @@ const Project = () => {
 
 
     const ProjecDetails = [
-        { image: EmailAuth, title: "Email-OTP Authentication", link: "email-auth-system.vercel.app"},
+        { image: EmailAuth, title: "Email-OTP Authentication", link: "https://email-auth-system.vercel.app"},
         { image: Animeverse, title: "Animeverse", link:"https://github.com/AdarshGzz/Anime-Webapp"},
         { image: Wheels4Rent, title: "Car Rental Website", link:"https://github.com/AdarshGzz/OnroadzCars"},
         { image: BmiCalculator, title: "BMI Calculator", link:"https://github.com/AdarshGzz/BMI_Calculator"},
