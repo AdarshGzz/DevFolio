@@ -31,7 +31,7 @@ const About = () => {
                     </p>
                     <div>
                         <Confeti>
-                            <Link href={'https://drive.google.com/file/d/1AWusiRLIzE5EOX-qXio-7_jjFFYND4zc/view?usp=drive_link'}>
+                            <Link href={'https://drive.google.com/file/d/1RmliN4I1UE-GtAveDiE07xlV_gfEfK-v/view?usp=sharing'}>
                             <Button variant={'default'} size={'lg'} className='gap-1'>
                                 Resume <ScrollText />
                             </Button>
