@@ -9,6 +9,7 @@ import Blob from './subcomponents/blob';
 import Typewriter from '@/components/subcomponents/typewriterText';
 import LavitationBox from './subcomponents/lavitation';
 import Scroll from './subcomponents/scroll';
+import GsapTo from './gsap/GsapTo';
 
 // import ProfileImage from '@/public/assets/fImage.png'
 const HomeSection = () => {
@@ -32,7 +33,7 @@ const HomeSection = () => {
             <div className=" w-full flex flex-row justify-center md:items-center items-start  md:px-[15rem] ">
                 <div className="flex md:flex-row items-center justify-around flex-col w-full gap-5 ">
                     <div className='w-full md:w-max flex flex-row items-center justify-around gap-3 '>
-                        <div>
+                        <GsapTo id={'t1'} animate={{opacity:1,delay:.5}} className=' opacity-0'>
                             <ul className='flex flex-col gap-7'>
                                 {socialInfo.map((social, i) => {
                                     return (
@@ -42,18 +43,18 @@ const HomeSection = () => {
                                     )
                                 })}
                             </ul>
-                        </div>
-                        <div className='md:hidden '>
+                        </GsapTo>
+                        <GsapTo id={'blob'} animate={{ opacity: 1, x: 0, yoyo: true, immediateRender: true }} className='md:hidden opacity-0 translate-x-20'>
                             <Blob />
-                        </div>
+                        </GsapTo>
                     </div>
                     <div className='flex flex-col gap-5 py-5 md:w-[25rem] w-[21rem]'>
                         <h1 className='text-4xl lg:text-6xl font-bold leading-[3rem] '>Hi, I&apos;m <br className='hidden md:block' /> Adarsh</h1>
-                        <div className='text-xl lg:text-2xl font-semibold dark:text-[#F2F1F3]/70 flex flex-row'>
+                        <GsapTo id={'it2'} animate={{ opacity: 1, delay: .5, x: 0, stagger: 1 }} className=' translate-x-10 text-xl lg:text-2xl font-semibold dark:text-[#F2F1F3]/70 flex flex-row opacity-0'>
                             <p className=' whitespace-nowrap'>I am a &nbsp;</p>
                             <Typewriter Words={Words} />
                             <p className=' whitespace-nowrap'>&nbsp; Developer</p>
-                        </div>
+                        </GsapTo>
                         <p className='text-lg lg:text-xl capitalize dark:text-[#F2F1F3]/70'>Open-Source enthusiast and self learner, <br className='hidden md:block' /> believes in the power of community.</p>
                         <Scroll scrollToId='contact'>
                         <Button variant={'default'} size="lg" className='gap-2 w-[10rem] '>
