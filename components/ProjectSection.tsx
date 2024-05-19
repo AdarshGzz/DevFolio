@@ -9,11 +9,12 @@ import DateAsk from '@/public/assets/Project/DateAsk.png'
 import Animeverse from '@/public/assets/Project/animeverse.png'
 import EmailAuth from '@/public/assets/Project/emailAuth.png'
 import IphoneWeb from '@/public/assets/Project/iphoneWeb.png'
-
+import QRify from '@/public/assets/Project/Qrify.png'
 const Project = () => {
 
 
     const ProjecDetails = [
+        { image: QRify, title: "QRify", link: "https://qrify-pi.vercel.app/"},
         { image: IphoneWeb, title: "Apple Web Clone", link: "https://iphone-henna.vercel.app/"},
         { image: EmailAuth, title: "Email-OTP Authentication", link: "https://email-auth-system.vercel.app"},
         { image: Animeverse, title: "Animeverse", link:"https://github.com/AdarshGzz/Anime-Webapp"},
